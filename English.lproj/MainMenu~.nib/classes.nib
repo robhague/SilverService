@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {refresh = id; }; 
+            CLASS = ServiceProvider; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSResponder; 
+        }, 
+        {CLASS = ServicesBundle; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {deleteService = id; newService = id; }; 
+            CLASS = ShellServicesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {bundle = ServicesBundle; theTable = NSTableView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

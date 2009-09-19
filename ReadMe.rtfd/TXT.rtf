@@ -1,0 +1,93 @@
+{\rtf1\mac\ansicpg10000\cocoartf102
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fswiss\fcharset77 Helvetica-Oblique;
+}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b\fs46 \cf0 SilverService
+\f1\b0\fs24 \
+\
+\'a9 2004 Rob Hague <rob@rho.org.uk>\
+\
+
+\f0\b Introduction
+\f1\b0 \
+\
+SilverService is an application that allows users to define System Services (i.e., those things that appear in "Services" under the application menu. based on Unix shell commands. These can take take input from the application via standard input or as an argument, and output can be displayed in a separate window, or returned to the calling application.\
+\
+
+\f0\b Installation
+\f1\b0 \
+\
+First, copy SilverService.app into an Applications diretory, i.e., one of the following directories (or a subdirectory thereof):\
+\
+/Applications/\
+~/Applications/\
+/Network/Applications\
+/System/Applications\
+\
+Your probably want either the first (available to everyone, but needs to be installed by an administrator) or the second (can be installed by any user, but only available to that user). The third allows networked users to access the application. You almost certainly don't want to use the fourth one. Note that SilverService will not function properly unless it is installed under one of those directories - you can't run it from the Desktop, for example.\
+\
+Once you've copied the application to an appropriate location, launch it. The first time a user launches it, SilverService creates the appropriate files for that user and opens the Preferences window, so you can start to add services.\
+\
+
+\f0\b Adding Services
+\f1\b0 \
+\
+Services are added via the Preferences window, shown below.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 {{\NeXTGraphic Pasted Graphic 2.tiff \width10700 \height5000
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\fs24 \cf0 \
+\
+Each row of the table corresponds to a service. The 
+\f2\i Service Name
+\f1\i0  can be anything you want; this is what appears in the Services menu (which is always ordered alphabetically, by the way). The 
+\f2\i Service Command
+\f1\i0  field contains the command to run when the service is envoked. Both of these fields are normal text fields - double click on them to edit the values.\
+\
+The 
+\f2\i Input
+\f1\i0  field specifies the way in which the shell command will receive input from the calling application. 'None' means that no input is taken from the calling application, 'stdin' means that the selected text is piped in on standard input, and 'string' means that the text is substituted for the characters "%@" in the command, before it is executed (as in the "Evaluate Python" service in the screenshot). At present, SilverService shell services only accept text input.\
+\
+Similarly, the 
+\f2\i Output
+\f1\i0  field determines what SilverService does with the output of the shell command (on standard output). "None" means that no output is read from standard output. "Panel" means that the result will be displayed in a windows; the text is editable, and may be copied to other applications in the normal way. "Service" means that the text is used as the output of the service; this usually means that the text is inserted into the calling application, replacing any current selection.\
+\
+
+\f2\i Note: if you set Input to "none", Output must be "service"; otherwise, the service doesn't interact with the calling application at all, and consequently OS X doesn't include it in the Services menu.
+\f1\i0 \
+\
+
+\f0\b Uninstalling Silver Service (or: What The Hell Are You Doing To My Home Directory)
+\f1\b0 \
+\
+There is no uninstalled for SilverService, but it is pretty easy to remove by hand. The application itself can be removed in the normal way. The application will disappear from the Services menu at the next login. Individual users' services are stored in ~/Library/Services/SilverService.service/ - these are the only files created by SilverService.\
+\
+Why does the application create the files here, and not in the more usual Library/Preferences or Library/Application Support? It's for the same reason that the application must be placed in a bona fide Applications directory. 
+\f2\i domain
+\f1\i0 /Applications and 
+\f2\i domain
+\f1\i0 /Library/Services (for each of the four file system domains - see Apple's developer documentation) are the locations searched when Mac OS X is building the Services menu.\
+\
+
+\f0\b Known Bugs
+\f1\b0 \
+\
+If SilverService.app is not running, it should start when one of its services is envoked. At present, this does not happen. This can be worked around by ensuring that SilverService is running whenever you want to use the services. If you use it often, you may wish to add it to Login Items (in System Preferences).\
+\
+
+\f0\b Licence
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 This file is part of SilverService.\
+\
+SilverService is free software; you can redistribute it and/or modifyit under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\
+\
+Foobar is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\
+\
+You should have received a copy of the GNU General Public License along with Foobar; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA }
