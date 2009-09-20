@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* SilverService */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = D408B7BB10663301005A0BC3 /* Build configuration list for PBXApplicationTarget "SilverService" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = SilverService;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SilverService;
+			productReference = 17587328FF379C6511CA2CBB /* SilverService.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SilverService</string>
+	<key>CFBundleIconFile</key>
+	<string>SilverService.icns</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array/>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		32CA4F650368D2AA00C91783 /* SilverService_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* SilverService_Prefix.h */; };
+		5720E05F060E155800A80123 /* SilverService.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5720E05E060E155800A80123 /* SilverService.icns */; };
+		57579B86106639DC00CA7A37 /* SilverService_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* SilverService_Prefix.h */; };
+		57579B87106639DC00CA7A37 /* ServiceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 57802D8C06035A1F00A80123 /* ServiceProvider.h */; };
+		57579B88106639DC00CA7A37 /* ServicesBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F9DA540606059300A80123 /* ServicesBundle.h */; };
+		57579B89106639DC00CA7A37 /* ShellServicesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 57BCA87706078F2400A80123 /* ShellServicesController.h */; };
+		57579B8B106639DC00CA7A37 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		57579B8C106639DC00CA7A37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		57579B8D106639DC00CA7A37 /* ReadMe.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 57B047B90608E5A700A80123 /* ReadMe.rtfd */; };
+		57579B8E106639DC00CA7A37 /* SilverService.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5720E05E060E155800A80123 /* SilverService.icns */; };
+		57579B90106639DC00CA7A37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		57579B91106639DC00CA7A37 /* ServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 57802D8D06035A1F00A80123 /* ServiceProvider.m */; };
+		57579B92106639DC00CA7A37 /* ServicesBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F9DA550606059300A80123 /* ServicesBundle.m */; };
+		57579B93106639DC00CA7A37 /* ShellServicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCA87806078F2400A80123 /* ShellServicesController.m */; };
+		57579B95106639DC00CA7A37 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		57802D8E06035A1F00A80123 /* ServiceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 57802D8C06035A1F00A80123 /* ServiceProvider.h */; };
+		57802D8F06035A1F00A80123 /* ServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 57802D8D06035A1F00A80123 /* ServiceProvider.m */; };
+		57B047BA0608E5A700A80123 /* ReadMe.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 57B047B90608E5A700A80123 /* ReadMe.rtfd */; };
+		57BCA87906078F2400A80123 /* ShellServicesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 57BCA87706078F2400A80123 /* ShellServicesController.h */; };
+		57BCA87A06078F2400A80123 /* ShellServicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCA87806078F2400A80123 /* ShellServicesController.m */; };
+		57F9DA560606059300A80123 /* ServicesBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F9DA540606059300A80123 /* ServicesBundle.h */; };
+		57F9DA570606059300A80123 /* ServicesBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F9DA550606059300A80123 /* ServicesBundle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		17587328FF379C6511CA2CBB /* SilverService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = SilverService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* SilverService_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SilverService_Prefix.h; sourceTree = "<group>"; };
+		5720E05E060E155800A80123 /* SilverService.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SilverService.icns; sourceTree = "<group>"; };
+		57579B9A106639DC00CA7A37 /* Info-SilverService__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-SilverService__Upgraded_.plist"; sourceTree = "<group>"; };
+		57579B9B106639DC00CA7A37 /* SilverService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57802D8C06035A1F00A80123 /* ServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceProvider.h; sourceTree = "<group>"; };
+		57802D8D06035A1F00A80123 /* ServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceProvider.m; sourceTree = "<group>"; };
+		57B047B90608E5A700A80123 /* ReadMe.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = ReadMe.rtfd; sourceTree = "<group>"; };
+		57BCA87706078F2400A80123 /* ShellServicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellServicesController.h; sourceTree = "<group>"; };
+		57BCA87806078F2400A80123 /* ShellServicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellServicesController.m; sourceTree = "<group>"; };
+		57F9DA540606059300A80123 /* ServicesBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ServicesBundle.h; sourceTree = "<group>"; };
+		57F9DA550606059300A80123 /* ServicesBundle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ServicesBundle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57579B94106639DC00CA7A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57579B95106639DC00CA7A37 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				57802D8C06035A1F00A80123 /* ServiceProvider.h */,
+				57802D8D06035A1F00A80123 /* ServiceProvider.m */,
+				57F9DA540606059300A80123 /* ServicesBundle.h */,
+				57F9DA550606059300A80123 /* ServicesBundle.m */,
+				57BCA87706078F2400A80123 /* ShellServicesController.h */,
+				57BCA87806078F2400A80123 /* ShellServicesController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* SilverService.app */,
+				57579B9B106639DC00CA7A37 /* SilverService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SilverService */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				57B047B90608E5A700A80123 /* ReadMe.rtfd */,
+				57579B9A106639DC00CA7A37 /* Info-SilverService__Upgraded_.plist */,
+			);
+			name = SilverService;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* SilverService_Prefix.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				5720E05E060E155800A80123 /* SilverService.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CA4F650368D2AA00C91783 /* SilverService_Prefix.h in Headers */,
+				57802D8E06035A1F00A80123 /* ServiceProvider.h in Headers */,
+				57F9DA560606059300A80123 /* ServicesBundle.h in Headers */,
+				57BCA87906078F2400A80123 /* ShellServicesController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57579B85106639DC00CA7A37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57579B86106639DC00CA7A37 /* SilverService_Prefix.h in Headers */,
+				57579B87106639DC00CA7A37 /* ServiceProvider.h in Headers */,
+				57579B88106639DC00CA7A37 /* ServicesBundle.h in Headers */,
+				57579B89106639DC00CA7A37 /* ShellServicesController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57579B84106639DC00CA7A37 /* SilverService (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57579B96106639DC00CA7A37 /* Build configuration list for PBXNativeTarget "SilverService (Upgraded)" */;
+			buildPhases = (
+				57579B85106639DC00CA7A37 /* Headers */,
+				57579B8A106639DC00CA7A37 /* Resources */,
+				57579B8F106639DC00CA7A37 /* Sources */,
+				57579B94106639DC00CA7A37 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SilverService (Upgraded)";
+			productInstallPath = "$(HOME)/Applications";
+			productName = SilverService;
+			productReference = 57579B9B106639DC00CA7A37 /* SilverService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D408B7BA10663301005A0BC3 /* Build configuration list for PBXProject "SilverService" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SilverService */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57579B84106639DC00CA7A37 /* SilverService (Upgraded) */,
+				29B97326FDCFA39411CA2CEA /* SilverService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				57B047BA0608E5A700A80123 /* ReadMe.rtfd in Resources */,
+				5720E05F060E155800A80123 /* SilverService.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57579B8A106639DC00CA7A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57579B8B106639DC00CA7A37 /* MainMenu.nib in Resources */,
+				57579B8C106639DC00CA7A37 /* InfoPlist.strings in Resources */,
+				57579B8D106639DC00CA7A37 /* ReadMe.rtfd in Resources */,
+				57579B8E106639DC00CA7A37 /* SilverService.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				57802D8F06035A1F00A80123 /* ServiceProvider.m in Sources */,
+				57F9DA570606059300A80123 /* ServicesBundle.m in Sources */,
+				57BCA87A06078F2400A80123 /* ShellServicesController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57579B8F106639DC00CA7A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57579B90106639DC00CA7A37 /* main.m in Sources */,
+				57579B91106639DC00CA7A37 /* ServiceProvider.m in Sources */,
+				57579B92106639DC00CA7A37 /* ServicesBundle.m in Sources */,
+				57579B93106639DC00CA7A37 /* ShellServicesController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57579B97106639DC00CA7A37 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SilverService_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-SilverService__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SilverService;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		57579B98106639DC00CA7A37 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SilverService_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-SilverService__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SilverService;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		57579B99106639DC00CA7A37 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SilverService_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-SilverService__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SilverService;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		D408B7B410663300005A0BC3 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		D408B7B510663300005A0BC3 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		D408B7B610663300005A0BC3 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		D408B7B710663300005A0BC3 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SilverService_Prefix.h;
+				PRODUCT_NAME = SilverService;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D408B7B810663300005A0BC3 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SilverService_Prefix.h;
+				PRODUCT_NAME = SilverService;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D408B7B910663300005A0BC3 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SilverService_Prefix.h;
+				PRODUCT_NAME = SilverService;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57579B96106639DC00CA7A37 /* Build configuration list for PBXNativeTarget "SilverService (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57579B97106639DC00CA7A37 /* Development */,
+				57579B98106639DC00CA7A37 /* Deployment */,
+				57579B99106639DC00CA7A37 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D408B7BA10663301005A0BC3 /* Build configuration list for PBXProject "SilverService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D408B7B410663300005A0BC3 /* Development */,
+				D408B7B510663300005A0BC3 /* Deployment */,
+				D408B7B610663300005A0BC3 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D408B7BB10663301005A0BC3 /* Build configuration list for PBXApplicationTarget "SilverService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D408B7B710663300005A0BC3 /* Development */,
+				D408B7B810663300005A0BC3 /* Deployment */,
+				D408B7B910663300005A0BC3 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
