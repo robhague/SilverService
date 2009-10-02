@@ -88,7 +88,7 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
     NSMutableDictionary *newService =
     [@"{name=\"New Service\"; in=stdin; out=service; command=\"\";}" propertyList];
     [[bundle servicesOfType: @"shellService"] addObject: newService];
-    [theTable setNeedsDisplay: YES];
+    [theTable reloadData];
     [bundle updateOnDisk];
 }
 
@@ -97,9 +97,7 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
     int index = [theTable selectedRow];
     if (index != -1)
     {
-        [[bundle servicesOfType: @"shellService"] removeObjectAtIndex: index];
-        [theTable setNeedsDisplay: YES];
-        [bundle updateOnDisk]; 
-    }
+        [[bundle servicesOfType: @"shellService"] removeObjectAtIndex: index];        [theTable reloadData];
+        [bundle updateOnDisk];    }
 }
 @end
